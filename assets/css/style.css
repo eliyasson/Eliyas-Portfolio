@@ -1,35 +1,61 @@
 @import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Poppins:wght@300&display=swap');
 
-*{
-    margin: 0;
-    padding: 0;
-}
 body{
     font-family: 'Poppins', sans-serif;
-    background-color: lightcyan;
+    margin: 50px 50px 0 50px;
+    display: flex;
+    flex-direction: column;
+    min-height: 95vh;
+    
 }
+main{
+    flex: 1;
+}
+.logo{
+    color: orange;
+    margin: auto;
 
-@media(max-width: 480px) {
-   body {
-      background-color:#198754 ;
-        font-size: 15px;
-    }
 }
-@media(min-width: 481px) and (max-width: 1200px) {
-   body {
-      background-color:#194c87 ;
-        font-size: 20px;
-    }
+h1 {
+    font-size: 5rem;
 }
-@media (min-width:1201px) and (max-width: 1600px) {
-   body {
-      background-color:#ff0088 ;
-        font-size: 15px;
-    }
+.footer{
+    text-align: right;
+    color: rgb(8, 63, 55);
 }
-@media(min-width: 1601px) {
-   body {
-      background-color:#ff2af1 ;
-        font-size: 15px;
+.card{
+    width: 45%;
+}
+.left{
+    float: left;
+}
+.right{
+    float: right;
+}
+.little-image{
+    width: 200px;
+    height: 210px;
+    float: left;
+    margin-right: 50px;
+}
+.creative{
+    color:blueviolet;
+}
+@media (max-width: 600px) {
+    .h1{
+       font-size: 3.5rem;
+       text-align: center;
+    }
+    .card {
+        width: 100%;
+        display: block;
+        margin-bottom: 30px;
+        text-align: justify;
+      }
+    .card img {
+        margin-bottom: 10px;
+        width: 100%;
+       object-fit: cover;
+       display: inline;
     }
 }
