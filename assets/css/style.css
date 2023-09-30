@@ -6,4 +6,30 @@
 }
 body{
     font-family: 'Poppins', sans-serif;
+    background-color: lightcyan;
+}
+
+@media(max-width: 480px) {
+   body {
+      background-color:#198754 ;
+        font-size: 15px;
+    }
+}
+@media(min-width: 481px) and (max-width: 1200px) {
+   body {
+      background-color:#194c87 ;
+        font-size: 20px;
+    }
+}
+@media (min-width:1201px) and (max-width: 1600px) {
+   body {
+      background-color:#ff0088 ;
+        font-size: 15px;
+    }
+}
+@media(min-width: 1601px) {
+   body {
+      background-color:#ff2af1 ;
+        font-size: 15px;
+    }
 }
