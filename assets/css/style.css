@@ -1,5 +1,5 @@
 .gradient-background {
-	background: linear-gradient(300deg, #1D5D9B, #75C2F6, #F4D160);
+	background: linear-gradient(300deg, #1D5D9B, #75C2F6, #d4b85c);
 	background-size: 180% 180%;
 	animation: gradient-animation 18s ease infinite;
 }
@@ -23,5 +23,10 @@
 .profile-img{
 	height: 200px;
 	border-radius: 50%;
+}
+.lead {
+    font-size: 1.75rem;
+    font-weight: 300;
+	color: white;
 }
 
