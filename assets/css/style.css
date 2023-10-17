@@ -29,4 +29,11 @@
     font-weight: 300;
 	color: white;
 }
+.circle{
+	height: 500px;
+	width: 500px;
+	border-radius: 50%;
+	background-color: white;
+	
+}
 
