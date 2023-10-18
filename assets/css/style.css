@@ -1,4 +1,50 @@
-.gradient-background {
+body{
+	display: block;
+	margin: 0;
+	
+}
+
+.top-container{
+	text-align: center;
+	background-color: #99DBF5;
+	position: relative;
+	padding: 20px;
+}
+h1{
+	font-size: 5.6rem;
+	display: block;
+	margin: 50px auto 0 auto;
+	font-family: Lucida Bright,Georgia,serif;
+	
+
+}
+.top-img{
+	margin: 50px;
+	height: 400px;
+	width: 400px;
+	border-radius: 50%;
+}
+
+.top-font{
+	font-weight: bold;
+	font-size: 6rem;
+	font-family: OCR A Std, monospace;
+	color: #2772db;
+}
+.font-style{
+	text-decoration: underline;
+}
+.lead{
+	width: 50%;
+	margin: auto;
+	color: rgba(0, 0, 0, 0.626);
+	font-size: 2rem;
+	font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+}
+
+
+
+/*.gradient-background {
 	background: linear-gradient(300deg, #1D5D9B, #75C2F6, #d4b85c);
 	background-size: 180% 180%;
 	animation: gradient-animation 18s ease infinite;
@@ -36,4 +82,4 @@
 	background-color: white;
 	
 }
-
+*/
