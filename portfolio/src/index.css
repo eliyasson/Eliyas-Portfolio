@@ -1,3 +1,4 @@
+
 body,
 ul {
   margin: 0;
@@ -30,12 +31,11 @@ header {
 .navbar li {
   margin: 0 15px;
   cursor: pointer;
-  font-size: 18px;
+  font-size: 12px;
   transition: color 0.3s;
 }
 
 .navbar li:hover {
   color: #ff7f50; 
 }
-
 
