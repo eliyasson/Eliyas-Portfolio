@@ -8,7 +8,7 @@ const year = currentDate.getFullYear();
 ReactDOM.render(
   <>
     <p>Created by {name}</p>
-    <p>Copyright {year}</p>
+    <p style={{color:"red"}}>Copyright {year}</p>
     
   </>, 
-    document.getElementById("root"));
+document.getElementById("root"));
