@@ -1,14 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
+import Header from './Header';
+import Home from './Home';
 
-const name = "Eliyas";
-const currentDate = new Date();
-const year = currentDate.getFullYear();
 ReactDOM.render(
   <>
-    <p>Created by {name}</p>
-    <p style={{color:"red"}}>Copyright {year}</p>
-    
+   <Header />
+   <Home />
   </>, 
 document.getElementById("root"));
