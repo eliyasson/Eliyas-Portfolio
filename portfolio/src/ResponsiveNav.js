@@ -1,18 +1,20 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 const ResponsiveNav = () => {
+  const [isActive, setIsActive] = useState(false);
+
   const handleMenuClick = () => {
-    navigation.classList.add("active");
+    setIsActive(true);
   };
 
   const handleCloseClick = () => {
-    navigation.classList.remove("active");
+    setIsActive(false);
   };
 
   return (
     <>
-      <div className="nav-menu-btn" onClick={handleMenuClick}></div>
-      <div className="nav-close-btn" onClick={handleCloseClick}></div>
+      <div className={`nav-menu-btn ${isActive ? 'active' : ''}`} onClick={handleMenuClick}></div>
+      <div className={`nav-close-btn ${isActive ? 'active' : ''}`} onClick={handleCloseClick}></div>
     </>
   );
 };

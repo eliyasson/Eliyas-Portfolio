@@ -8,11 +8,15 @@ import Skills from './Skills';
 import Services from './Services';
 import Contact from './Contact';
 import Footer from './Footer';
+import ThemeSwitcher from './ThemeSwitcher';
+import ScrollHandler from './ScrollHandler';
 import ResponsiveNav from './ResponsiveNav';
 import ScrollRevealComponent from './ScrollRevealComponent';
 
 ReactDOM.render(
   <>
+   <ThemeSwitcher />
+   <ScrollHandler />
    <ResponsiveNav />
    <Headers />
    <Home />
