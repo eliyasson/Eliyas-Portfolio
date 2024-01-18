@@ -14,10 +14,10 @@ function Home() {
         <div className="info">
           <h2>I am <span>Eliyas Kassaye</span></h2>
           <h3>Web Developer</h3>
-          <a>Contact Me <i className="fas fa-arrow-circle-right"></i></a>
+          <a href="#contact" class="btn">Contact Me <i class="fas fa-arrow-circle-right"></i></a>
         </div>
         <div className="home-img">
-          <img src="" alt="Your Alt Text Here" />
+          <img src="./Images/eliyas.png" alt="Eliyas" />
         </div>
       </div>
     </section>

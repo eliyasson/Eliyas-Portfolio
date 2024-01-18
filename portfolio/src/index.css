@@ -317,8 +317,6 @@ header.sticky .nav-bar{
       transform: translateY(10px);
   }
 }
-
-
 /* Common Style for all sections  */
 .flex-center{
   display: flex;
@@ -579,7 +577,6 @@ footer a{
   font-size: 3em;
   font-weight: 600;
   background: linear-gradient(to top, transparent 0%, #fff 50%);
-  -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   opacity: 0.8;
 }
@@ -665,7 +662,6 @@ footer a{
 
   .nav-close-btn{
       position: absolute;
-      background: url(./Images/close-btn.png)no-repeat;
       filter: var(--color-filter);
       background-size: 12px;
       background-position: center;
@@ -678,7 +674,6 @@ footer a{
   }
 
   .nav-menu-btn{
-      background: url(./Images/menu-btn.png)no-repeat;
       filter: var(--color-filter);
       background-size: 30px;
       background-position: center;
@@ -750,12 +745,10 @@ footer a{
       right: 0;
       top: 80px;
   }
-
   /* skills section */
   .skills{
       margin-top: 100px;
   }
-
 
   #about-title{
       margin-top: 70px;

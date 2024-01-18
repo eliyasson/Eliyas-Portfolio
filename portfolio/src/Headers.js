@@ -1,6 +1,6 @@
 import React from 'react';
 
-function Headers() {
+function Header() {
   return (
     <header>
       <div className="nav-bar" id="nav-bar">
@@ -20,4 +20,4 @@ function Headers() {
   );
 }
 
-export default Headers;
+export default Header;
