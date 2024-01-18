@@ -8,9 +8,12 @@ import Skills from './Skills';
 import Services from './Services';
 import Contact from './Contact';
 import Footer from './Footer';
+import ResponsiveNav from './ResponsiveNav';
+import ScrollRevealComponent from './ScrollRevealComponent';
 
 ReactDOM.render(
   <>
+   <ResponsiveNav />
    <Headers />
    <Home />
    <About />
@@ -18,5 +21,7 @@ ReactDOM.render(
    <Services />
    <Contact />
    <Footer />
+  
+   <ScrollRevealComponent />
   </>, 
 document.getElementById("root"));
