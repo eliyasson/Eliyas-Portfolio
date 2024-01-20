@@ -11,20 +11,20 @@ function Contact() {
             <ul className="contact-list">
               <li>
                 <h3 className="item-title"><i className="fas fa-phone"></i>Phone</h3>
-                <span>+358400000</span>
+                <span>+358405390711</span>
               </li>
               <li>
                 <h3 className="item-title"><i className="fas fa-envelope"></i>Email Address</h3>
-                <span><a href="mailto:example@example.com">eliyas@gmail.com</a></span>
+                <span><a href="mailto:example@example.com">eliyasson11@gmail.com</a></span>
               </li>
               <li>
                 <h3 className="item-title"><i className="fas fa-map-marker-alt"></i>Address</h3>
-                <span>Helsinki, Finland</span>
+                <span>Juustenintie 3 Helsinki, Finland</span>
               </li>
             </ul>
           </div>
           <div className="contact-right">
-            <form action="https://formspree.io/f/mdojodpe" method="POST" className="contact-form">
+            <form action="https://formspree.io/f/xleqgrjp" method="POST" className="contact-form">
               <div className="first-row">
                 <input type="text" name="Name" placeholder="Name" required />
               </div>

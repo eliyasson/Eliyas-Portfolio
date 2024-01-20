@@ -2,8 +2,10 @@ import React from 'react';
 
 function Header() {
   return (
+    
     <header>
       <div className="nav-bar" id="nav-bar">
+      <a href="#home" className="logo">Eliyas</a>
         <div className="navigation">
           <div className="nav-items">
             <div className="nav-close-btn"></div>
