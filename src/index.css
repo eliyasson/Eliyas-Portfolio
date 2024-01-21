@@ -478,7 +478,9 @@ header.sticky .nav-bar{
   justify-content: space-between;
   width: 100%;
 }
-
+.contact-left{
+  width: 50%;
+}
 .contact-left h2{
   font-size: 1em;
   font-weight: 800;
