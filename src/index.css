@@ -377,7 +377,7 @@ header.sticky .nav-bar{
 }
 
 .text-container{
-  font-size: 1.6rem;
+  font-size: 1.5rem;
 }
 
 .text-container span{
@@ -385,7 +385,7 @@ header.sticky .nav-bar{
 }
 
 .about .section-title{
-  margin-top: 3rem;
+  margin-top: 2rem;
 }
 
 /* Skill section  */
@@ -480,7 +480,7 @@ header.sticky .nav-bar{
 }
 
 .contact-left h2{
-  font-size: 2.1em;
+  font-size: 1em;
   font-weight: 800;
   margin-bottom: 40px;
 }
