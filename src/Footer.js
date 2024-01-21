@@ -3,6 +3,7 @@ import React from 'react';
 function Footer() {
   return (
     <footer>
+      
       <div className="footer-container">
         <div className="hr"></div>
         <div className="follow group">
