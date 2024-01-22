@@ -7,34 +7,6 @@
     font-family: 'Poppins',sans-serif;
 }
 
-.dark-theme{
-    --first-color:#0e2431;
-    --second-color: rgb(230, 48, 93);
-    --third-color:#777;
-
-    --hover-color:rgb(223, 37, 84);
-
-    --body-bg-color: #fefefe;
-    --card-bg-color:#fff;
-    --modal-bg-color:#fff;
-    --bg-transparent-color:rgba(0,0,0,0.1);
-    --transparent-color-01:rgba(0,0,0,0.1);
-    --transparent-color-02:rgba(106,89,209,0.1);
-    --line-color:#d7d7d7;
-
-    --color-filter:invert(1);
-
-    --box-shadow:0px 0px 20px rgba(0 0 0 / 10%);
-
-    --small-fonts-size:0.9em;
-    --normal-font-size:1em;
-
-    --scroll-bar-color:#c5cadf;
-    --scroll-thumb-color:#70768a;
-    --scroll-thumb-hover-color:#454f6b;
-
-    --btn-font-color: black;
-}
 
 html{
     scroll-behavior: smooth;
@@ -55,45 +27,7 @@ li{
     list-style: none;
 }
 
-/* Scroll bar  */
 
-::-webkit-scrollbar{
-    width: 10px;
-    background: var(--scroll-bar-color);
-}                 
-
-::-webkit-scrollbar-thumb{
-    background: var(--scroll-thumb-color);
-    border-radius: 2em;
-}
-
-::-webkit-scrollbar-thumb:hover{
-    background: var(--scroll-thumb-hover-color);
-}
-
-/* theme change  */
-.theme-btn{
-    z-index: 999999;
-    position: fixed;
-    right: 0px;
-    top: 100px;
-    background: var(--transparent-color-01);
-    backdrop-filter: blur(20px);
-    width: 50px;
-    height: 50px;
-    font-size: 1.2em;
-    border-radius: 5px 0 0 5px;
-    box-shadow: var(--box-shadow);
-    cursor: pointer;
-}
-
-.theme-btn .fa-sun, .theme-btn.sun .fa-moon{
-    display: none;
-}
-
-.theme-btn.sun .fa-sun{
-    display: block;
-}
 
 :root{
     --first-color:#fff;
@@ -184,6 +118,7 @@ header.sticky .nav-bar{
 
 /* Home Section  */
 .home{
+  background-image: url(./Images/header-background.jpg);
   position: relative;
   max-width: 1250px;
   min-height: 105vh;
