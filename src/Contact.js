@@ -7,7 +7,7 @@ function Contact() {
         <h2 className="section-title">Contact Me</h2>
         <div className="content">
           <div className="contact-left">
-            <h2 id="contact-h2">If you want to know more about me or my work, <br />or if you would just like to say hello, Just give me a call or send me an email. <br />I'd love to hear from you.</h2>
+            <h2 id="contact-h2"> <br />or if you would just like to say hello, Just give me a call or send me an email. <br />I'd love to hear from you.</h2>
             <ul className="contact-list">
               <li>
                 <h3 className="item-title"><i className="fas fa-phone"></i>Phone</h3>
