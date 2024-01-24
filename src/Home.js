@@ -3,6 +3,7 @@ import React from 'react';
 function Home() {
   return (
     <section className="home flex-center" id="home">
+      
       <div className="home-container">
         <div className="media-icons">
           <a href="https://www.facebook.com/jesus.islord99/" id="fb" target="_blank" rel="noreferrer"><i className="fab fa-facebook-f"></i></a>
@@ -16,12 +17,11 @@ function Home() {
           <h3>Web Developer</h3>
           <a href="#contact" class="btn">Contact Me <i class="fas fa-arrow-circle-right"></i></a>
         </div>
-        <div className="home-img">
-          <img src="./Images/eliyas.png" alt="Eliyas" />
-        </div>
       </div>
     </section>
   );
 }
 
 export default Home;
+
+
