@@ -1,13 +1,14 @@
 {
   "files": {
-    "main.css": "/Eliyas-Portfolio/static/css/main.654515b3.css",
-    "main.js": "/Eliyas-Portfolio/static/js/main.5b1ec8e1.js",
+    "main.css": "/Eliyas-Portfolio/static/css/main.da07e9da.css",
+    "main.js": "/Eliyas-Portfolio/static/js/main.047105bb.js",
+    "static/media/header-background.jpg": "/Eliyas-Portfolio/static/media/header-background.60a1d768614a2bdc6a69.jpg",
     "index.html": "/Eliyas-Portfolio/index.html",
-    "main.654515b3.css.map": "/Eliyas-Portfolio/static/css/main.654515b3.css.map",
-    "main.5b1ec8e1.js.map": "/Eliyas-Portfolio/static/js/main.5b1ec8e1.js.map"
+    "main.da07e9da.css.map": "/Eliyas-Portfolio/static/css/main.da07e9da.css.map",
+    "main.047105bb.js.map": "/Eliyas-Portfolio/static/js/main.047105bb.js.map"
   },
   "entrypoints": [
-    "static/css/main.654515b3.css",
-    "static/js/main.5b1ec8e1.js"
+    "static/css/main.da07e9da.css",
+    "static/js/main.047105bb.js"
   ]
 }
