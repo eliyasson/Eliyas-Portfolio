@@ -118,32 +118,39 @@ const technologies = [
 
 const experiences = [
   {
-    title: 'Front-End Developer',
-    company_name: 'Cover Hunt',
+    title: 'Civil Engineering',
+    company_name: 'Adigrat University, Ethiopia',
     icon: coverhunt,
     iconBg: '#333333',
-    date: 'Aug 2021 - Feb 2022',
+    date: 'Sep 20 2013 - July 30 2018',
   },
   {
-    title: 'Mentor (Volunteer)',
-    company_name: 'Microverse',
+    title: 'Vidio Game Design',
+    company_name: 'xamk.fi',
     icon: microverse,
     iconBg: '#333333',
-    date: 'Mar 2022 - May 2022',
+    date: 'Mar 2020 - Aug 26 2020',
   },
   {
-    title: 'Junior Software Engineer',
-    company_name: 'Kelhel',
+    title: 'Front-End Development Bootcamp',
+    company_name: 'github.com/mekbib-tekle',
     icon: kelhel,
     iconBg: '#333333',
-    date: 'May 2022 - Oct 2022',
+    date: 'May 2022 - Jan 2024',
   },
   {
-    title: 'Full Stack Developer',
-    company_name: 'Diversity Cyber Council',
+    title: 'Full-Stack Web Development',
+    company_name: 'Udemy',
+    icon: kelhel,
+    iconBg: '#333333',
+    date: 'Aug 2022 - Present',
+  },
+  {
+    title: 'Ohjelmistokehittäjä',
+    company_name: 'StadinAO',
     icon: dcc,
     iconBg: '#333333',
-    date: 'Sep 2022 - Present',
+    date: 'Aug 2022 - Present',
   },
 ];
 

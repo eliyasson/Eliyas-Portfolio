@@ -87,9 +87,9 @@ const Hero = () => {
 
         <div>
           <img
-            className="absolute bottom-0  ml-[50vw] 
-            lg:ml-[75vw] md:ml-[60vw] xmd:ml-[60vw] 
-            sm:h-[70vh] md:h-[80vh] xl:h-[80vh]"
+            className="absolute bottom-0  ml-[25vw] 
+            lg:ml-[65vw] md:ml-[60vw] xmd:ml-[60vw] 
+            sm:h-[70vh] md:h-[80vh] xl:h-[80vh] object-cover max-h-[80vh]"
             src={eliyas}
             alt="eliyas"
           />
