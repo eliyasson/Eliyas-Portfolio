@@ -16,7 +16,7 @@ const ServiceCard = ({ index, title, icon }) => {
           scale: 1,
           speed: 450,
         }}
-        className="bg-jetLight rounded-[20px] py-5 px-12 min-h-[280px] flex justify-evenly items-center flex-col">
+        className="bg-gradient-to-r from-gray-900 to-gray-700 rounded-[20px] py-5 px-12 min-h-[280px] flex justify-evenly items-center flex-col">
         <img src={icon} alt={title} className="w-16 h-16 object-contain" />
         <h3 className="text-taupe text-[18px] font-bold text-center">
           {title}
@@ -37,9 +37,10 @@ const About = () => {
       <motion.p
         variants={fadeIn('', '', 0.1, 1)}
         className="mt-4 text-taupe text-[18px] max-w-3xl leading-[30px]">
-        Enthusiastic and dedicated Front-End Developer student with a passion for creating visually 
-        appealing and user-friendly web applications. Currently pursuing studies in Full Stack Development 
-        on Udemy to broaden my skill set and deepen my understanding of the complete web development stack.
+        I am currently studying in StadinAO <span className="text-red-500 font-bold">Ohjelmistokehittäjä.</span> As an enthusiastic and dedicated Front-End Developer 
+        student, I have a passion for creating visually appealing and user-friendly web applications. 
+        In addition to my ongoing studies, I am actively pursuing Full Stack 
+        Development on Udemy to broaden my skill set and deepen my understanding of the complete web development stack.
       </motion.p>
 
       <div className="mt-20 flex flex-wrap gap-10">

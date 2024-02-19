@@ -19,32 +19,40 @@ const Hero = () => {
           className="w-full h-full object-cover sm:hidden block"
         />
       </div>
-      <section className="relative flex sm:flex-row flex-col w-full h-screen mx-auto bg-gradient-to-r from-gray-900 to-gray-700">
+      <section className="relative flex sm:flex-row flex-col w-full h-screen mx-auto bg-gradient-to-r from-gray-900 to-gray-400">
         <div
-          className={`absolute inset-0 sm:top-[250px] top-[150px] lg:top-[150px] xl:top-[250px] ${styles.paddingX} max-w-7xl mx-auto flex flex-row items-start justify-between gap-3`}
+          className={`absolute inset-0 sm:top-[250px] top-[150px] lg:top-[150px] xl:top-[250px]  max-w-7xl mx-auto flex flex-row items-start justify-between gap-3`}
         >
           <div className="flex flex-col justify-center items-center mt-5 ml-3">
             <div className="w-5 h-5 rounded-full bg-white sm:hidden" />
             <div className="w-1 sm:h-80 h-40 bg-gradient-to-t from-transparent to-gray-800 sm:hidden" />
           </div>
 
-          <div>
+          <motion.div
+            initial={{ opacity: 0, y: -30 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.5, duration: 1 }}
+          >
             <h1
               className={`${styles.heroHeadText} text-white font-poppins uppercase fadeInAnimation bounceAnimation`}
             >
               Hey, I'm{' '}
               <span
-                className=" sm:text-[70px] 
-              text-white text-[50px] font-mova
-               uppercase blackAndWhiteText"
+                className="sm:text-[50px] 
+                        text-white text-[50px] font-mova
+                        uppercase blackAndWhiteText"
               >
                 Eliyas
+              </span>
+              <span role="img" aria-label="coder" style={{ fontSize: '58px', marginLeft: '10px' }}>
+                👨‍💻
               </span>
             </h1>
             <p className={`${styles.heroSubText} mt-2 text-white`}>
               Front End Developer
             </p>
-          </div>
+          </motion.div>
+
           <div
             className="w-screen flex flex-col items-start 
             justify-center sm:-ml-[3rem] xxs:mt-4"
@@ -55,7 +63,8 @@ const Hero = () => {
 
         <div
           className="absolute xs:bottom-10 bottom-32 w-full 
-          flex justify-center items-center">
+          flex justify-center items-center"
+        >
           <a href="#about">
             <div
               className="w-[35px] h-[64px] rounded-3xl border-4 
@@ -78,9 +87,9 @@ const Hero = () => {
 
         <div>
           <img
-            className="absolute bottom-0 ml-[50vw] 
+            className="absolute bottom-0  ml-[50vw] 
             lg:ml-[75vw] md:ml-[60vw] xmd:ml-[60vw] 
-            sm:h-[90vh] md:h-[70vh] xl:h-[80vh]"
+            sm:h-[70vh] md:h-[80vh] xl:h-[80vh]"
             src={eliyas}
             alt="eliyas"
           />
@@ -91,4 +100,3 @@ const Hero = () => {
 };
 
 export default Hero;
-

@@ -49,10 +49,7 @@ const services = [
     title: 'Frontend Developer',
     icon: frontend,
   },
-  {
-    title: 'Backend Developer',
-    icon: backend,
-  },
+
   {
     title: 'UI/UX Design',
     icon: ux,
@@ -114,7 +111,7 @@ const technologies = [
     icon: figma,
   },
   {
-    name: 'docker',
+    name: 'php',
     icon: docker,
   },
 ];
@@ -153,25 +150,12 @@ const experiences = [
 const projects = [
   {
     id: 'project-1',
-    name: 'KomiKult',
+    name: 'Drum kit',
     description: 'A comic characters list app that displays Marvel characters.',
-    tags: [
-      {
-        name: 'react',
-        color: 'blue-text-gradient',
-      },
-      {
-        name: 'mongodb',
-        color: 'green-text-gradient',
-      },
-      {
-        name: 'tailwind',
-        color: 'pink-text-gradient',
-      },
-    ],
+   
     image: komikult,
-    repo: 'https://github.com/shaqdeff/KomiKult',
-    demo: 'https://shaqdeff.github.io/KomiKult/',
+    repo: 'https://github.com/eliyasson/Drum-kit',
+    demo: 'https://eliyasson.github.io/Drum-kit/',
   },
   {
     id: 'project-2',
