@@ -151,7 +151,7 @@ const projects = [
   {
     id: 'project-1',
     name: 'Drum kit',
-    description: 'A comic characters list app that displays Marvel characters.',
+    description: 'The code implements event listeners to detect both keyboard inputs and on-screen button clicks, allowing users to play various drum sounds.',
    
     image: komikult,
     repo: 'https://github.com/eliyasson/Drum-kit',
@@ -159,94 +159,25 @@ const projects = [
   },
   {
     id: 'project-2',
-    name: 'Leaderboard',
+    name: 'KuvaKantele',
     description:
-      'A leaderboard list app that displays scores submitted by different players.',
-    tags: [
-      {
-        name: 'react',
-        color: 'blue-text-gradient',
-      },
-      {
-        name: 'restapi',
-        color: 'green-text-gradient',
-      },
-      {
-        name: 'scss',
-        color: 'pink-text-gradient',
-      },
-    ],
+      'The KuvaKantele school project is a comprehensive web application designed using PHP, CSS, HTML, Bootstrap, and JavaScript. The project encompasses both an admin side and a user side, offering a versatile platform.',
+
     image: leaderboard,
-    repo: 'https://github.com/shaqdeff/Leaderboard',
-    demo: 'https://shaqdeff.github.io/Leaderboard/',
+    repo: 'https://github.com/eliyasson/Ohjelmointi-n-ytt-',
+    demo: 'https://github.com/eliyasson/Ohjelmointi-n-ytt-',
   },
   {
     id: 'project-3',
-    name: 'Math Magicians',
-    description: 'This is a single-page calculator app built with React',
-    tags: [
-      {
-        name: 'nextjs',
-        color: 'blue-text-gradient',
-      },
-      {
-        name: 'supabase',
-        color: 'green-text-gradient',
-      },
-      {
-        name: 'css',
-        color: 'pink-text-gradient',
-      },
-    ],
+    name: 'Small Library',
+    description: 'The Small Library project is a compact and efficient web application designed to manage and organize a collection of books. Developed using a combination of HTML, CSS, and PHP and JavaScript, the project provides a user-friendly interface for both librarians and library visitors',
+    
     image: math,
-    repo: 'https://github.com/shaqdeff/Math-Magicians',
-    demo: 'https://inspiring-medovik-37d3b3.netlify.app/',
+    repo: 'https://github.com/eliyasson/PHP-MySQL-Book-Records',
+    demo: 'https://github.com/eliyasson/PHP-MySQL-Book-Records',
   },
-  {
-    id: 'project-4',
-    name: 'Movie Metro',
-    description: `A single-page application that allows users to search for any movie or show's ratings and its details.`,
-    tags: [
-      {
-        name: 'nextjs',
-        color: 'blue-text-gradient',
-      },
-      {
-        name: 'supabase',
-        color: 'green-text-gradient',
-      },
-      {
-        name: 'css',
-        color: 'pink-text-gradient',
-      },
-    ],
-    image: movie,
-    repo: 'https://github.com/shaqdeff/Movie-Metro',
-    demo: 'https://movie-metro.netlify.app/',
-  },
-  {
-    id: 'project-5',
-    name: 'Nyeusi Fest Site',
-    description:
-      'This is a demo concert website for a music festival called Nyeusi.',
-    tags: [
-      {
-        name: 'nextjs',
-        color: 'blue-text-gradient',
-      },
-      {
-        name: 'supabase',
-        color: 'green-text-gradient',
-      },
-      {
-        name: 'css',
-        color: 'pink-text-gradient',
-      },
-    ],
-    image: nyeusi,
-    repo: 'https://github.com/shaqdeff/Nyeusi-Fest-Site',
-    demo: 'https://shaqdeff.github.io/Nyeusi-Fest-Site/',
-  },
+  
+  
 ];
 
 export { services, technologies, experiences, projects };

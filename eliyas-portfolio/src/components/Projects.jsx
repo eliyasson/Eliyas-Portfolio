@@ -26,7 +26,7 @@ const ProjectCard = ({
       h-[420px] cursor-pointer card-shadow`}
       onClick={() => handleClick(id)}>
       <div
-        className="absolute top-0 left-0 z-10 bg-jetLight 
+        className="absolute top-0 left-0 z-10  
       h-full w-full opacity-[0.5] rounded-[24px]"></div>
 
       <img
@@ -36,10 +36,10 @@ const ProjectCard = ({
       />
 
       {active !== id ? (
-        <div className="flex items-center justify-start pr-[4.5rem]">
+        <div className="flex items-center justify-start pr-[3rem]">
           <h3
             className="font-extrabold font-beckman uppercase w-[200px] h-[30px] 
-        whitespace-nowrap sm:text-[27px] text-[18px] text-timberWolf tracking-[1px]
+        whitespace-nowrap sm:text-[27px] text-[16px] text-timberWolf tracking-[1px]
         absolute z-0 lg:bottom-[7rem] lg:rotate-[-90deg] lg:origin-[0,0]
         leading-none z-20">
             {name}
