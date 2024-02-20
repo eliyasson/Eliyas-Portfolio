@@ -2,35 +2,47 @@ import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { styles } from '../styles';
 import { navLinks } from '../constants';
-import { close, menu, logo, logotext } from '../assets';
+import { close, menu, logo } from '../assets';
 
 const Navbar = () => {
   const [active, setActive] = useState('');
   const [toggle, setToggle] = useState(false);
 
+  const toggleMenu = () => {
+    setToggle(!toggle);
+  };
+
+  const handleNavLinkClick = (title) => {
+    setActive(title);
+    toggleMenu();
+    window.scrollTo(0, 0);
+  };
+
+  useEffect(() => {
+    // Close the mobile menu when the user scrolls
+    const handleScroll = () => {
+      if (toggle) {
+        setToggle(false);
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, [toggle]);
+
   return (
     <nav
-      className={`${styles.paddingX}  w-full flex items-center py-1 fixed 
-      top-0 z-20 bg-flashWhite sm:opacity-[0.97] xxs:h-[12vh]`}>
+      className={`${styles.paddingX} w-full flex items-center py-1 fixed top-0 z-20 bg-flashWhite sm:opacity-[0.97] xxs:h-[12vh]`}>
       <div className="w-full flex justify-between items-center max-w-7xl mx-auto">
-        <Link
-          to="/"
-          className="flex items-center gap-2"
-          onClick={() => {
-            setActive('');
-            window.scrollTo(0, 0);
-          }}>
+        <Link to="/" className="flex items-center gap-2" onClick={() => handleNavLinkClick('')}>
           <img
-            src={logo} 
+            src={logo}
             alt="logo"
             className="sm:w-[80px] sm:h-[70px] w-[85px] h-[85px] object-contain"
           />
-
-        {/*   <img
-            src={logotext}
-            alt="logo"
-            className="sm:w-[210px] sm:h-[90px] w-[85px] h-[85px] -ml-[0.6rem] "
-          /> */}
         </Link>
         <ul className="list-none hidden sm:flex flex-row gap-14 mt-2">
           {navLinks.map((nav) => (
@@ -38,45 +50,36 @@ const Navbar = () => {
               key={nav.id}
               className={`${
                 active === nav.title ? 'text-french' : 'blackAndWhiteText'
-              } hover:text-taupe text-[16px] font-medium font-mova 
-                uppercase tracking-[4px] cursor-pointer nav-links`}
-              onClick={() => setActive(nav.title)}>
+              } hover:text-taupe text-[16px] font-medium font-mova uppercase tracking-[4px] cursor-pointer nav-links`}
+              onClick={() => handleNavLinkClick(nav.title)}>
               <a href={`#${nav.id}`}>{nav.title}</a>
             </li>
           ))}
         </ul>
 
-        {/* mobile */}
+        {/* Mobile */}
         <div className="sm:hidden flex flex-1 w-screen justify-end items-center">
           {toggle ? (
             <div
-              className={`p-6 bg-flashWhite opacity-[0.98] absolute 
-                top-0 left-0 w-screen  menu ${
-                  toggle ? 'menu-open' : 'menu-close'
-                }`}>
+              className={`p-6 bg-flashWhite opacity-[0.98] absolute top-0 left-0 w-screen menu ${
+                toggle ? 'menu-open' : 'menu-close'
+              }`}>
               <div className="flex justify-end">
                 <img
                   src={close}
                   alt="close"
                   className="w-[22px] h-[22px] object-contain cursor-pointer"
-                  onClick={() => setToggle(!toggle)}
+                  onClick={toggleMenu}
                 />
               </div>
-              <ul
-                className="list-none flex flex-col -gap-[1rem] 
-                items-start justify-end ">
+              <ul className="list-none flex flex-col -gap-[1rem] items-start justify-end">
                 {navLinks.map((nav) => (
                   <li
-                    id={nav.id}
                     key={nav.id}
                     className={`${
                       active === nav.title ? 'text-french' : 'blackAndWhiteText'
-                    } text-[8px] font-bold 
-                      uppercase  cursor-pointer`}
-                    onClick={() => {
-                      setToggle(!toggle);
-                      setActive(nav.title);
-                    }}>
+                    } text-[16px] font-bold uppercase cursor-pointer`}
+                    onClick={() => handleNavLinkClick(nav.title)}>
                     <a href={`#${nav.id}`}>{nav.title}</a>
                   </li>
                 ))}
@@ -87,7 +90,7 @@ const Navbar = () => {
               src={menu}
               alt="menu"
               className="w-[34px] h-[34px] object-contain cursor-pointer"
-              onClick={() => setToggle(!toggle)}
+              onClick={toggleMenu}
             />
           )}
         </div>
