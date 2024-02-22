@@ -27,7 +27,9 @@ import {
   dcc,
   kelhel,
   microverse,
+  graphics,
 } from '../assets';
+
 
 export const navLinks = [
   {
@@ -57,6 +59,10 @@ const services = [
   {
     title: 'Full stack developer',
     icon: prototyping,
+  },
+  {
+    title: 'Graphics Design',
+    icon: graphics,
   },
 ];
 

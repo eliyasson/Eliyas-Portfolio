@@ -2,26 +2,22 @@ import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import { styles } from '../styles';
 import { navLinks } from '../constants';
-import { eliyas, bwmap, worldmap } from '../assets';
+import { eliyas} from '../assets';
+import githubIcon from '../assets/icons/github.svg';
+import linkedinIcon from '../assets/icons/linkedin.svg';
+import instagramIcon from '../assets/icons/instagram.svg';
+
+const Icon = ({ src, alt }) => (
+  <img src={src} alt={alt} className="w-8 h-8 md:w-10 md:h-10 lg:w-12 lg:h-12 mr-4 md:mr-6 lg:mr-8" />
+);
 
 const Hero = () => {
   return (
     <>
-      <div className="absolute top-0 left-0 z-0 h-[100vh] w-screen overflow-hidden">
-        <img
-          src={bwmap}
-          alt="world map"
-          className="w-full h-full object-cover filter grayscale sm:block hidden"
-        />
-        <img
-          src={worldmap}
-          alt="world map"
-          className="w-full h-full object-cover sm:hidden block"
-        />
-      </div>
-      <section className="relative flex sm:flex-row flex-col w-full h-screen mx-auto bg-gradient-to-r from-gray-900 to-gray-400">
+    
+      <section className="overflow-hidden relative flex sm:flex-row flex-col w-full h-screen mx-auto bg-gradient-to-r from-gray-900 to-gray-400">
         <div
-          className={`absolute inset-0 sm:top-[250px] top-[150px] lg:top-[150px] xl:top-[250px]  max-w-7xl mx-auto flex flex-row items-start justify-between gap-3`}
+          className={`absolute inset-0 sm:top-[200px] top-[170px] lg:top-[150px] xl:top-[250px]  max-w-7xl mx-auto flex flex-row items-start justify-between `}
         >
           <div className="flex flex-col justify-center items-center mt-5 ml-3">
             <div className="w-5 h-5 rounded-full bg-white sm:hidden" />
@@ -51,6 +47,17 @@ const Hero = () => {
             <p className={`${styles.heroSubText} mt-2 text-white`}>
               Front End Developer
             </p>
+            <div className="flex mt-4 md:mt-6 lg:mt-8">
+              <a href="https://github.com/eliyasson" target="_blank" rel="noopener noreferrer">
+                <Icon src={githubIcon} alt="GitHub" />
+              </a>
+              <a href="https://www.linkedin.com/in/eliyas-kassaye/" target="_blank" rel="noopener noreferrer">
+                <Icon src={linkedinIcon} alt="LinkedIn" />
+              </a>
+              <a href="https://www.instagram.com/eliiyas_t/" target="_blank" rel="noopener noreferrer">
+                <Icon src={instagramIcon} alt="Instagram" />
+              </a>
+            </div>
           </motion.div>
 
           <div
@@ -87,9 +94,9 @@ const Hero = () => {
 
         <div>
           <img
-            className="absolute bottom-0  ml-[25vw] 
+            className="absolute bottom-0  ml-[50vw] 
             lg:ml-[65vw] md:ml-[60vw] xmd:ml-[60vw] 
-            sm:h-[70vh] md:h-[80vh] xl:h-[80vh] object-cover max-h-[80vh]"
+            sm:h-[70vh] md:h-[80vh] xl:h-[80vh] object-cover max-h-[90vh]"
             src={eliyas}
             alt="eliyas"
           />

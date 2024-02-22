@@ -11,6 +11,7 @@ import eliyas from './personal/eliyas.png';
 import backend from './icons/backend.png';
 import ux from './icons/ux.png';
 import frontend from './icons/frontend.png';
+import graphics from './icons/graphics.png';
 import prototyping from './icons/prototyping.png';
 import github from './icons/github.png';
 import close from './icons/close.png';
@@ -61,6 +62,7 @@ export {
   backend,
   ux,
   frontend,
+  graphics,
   prototyping,
   github,
   close,

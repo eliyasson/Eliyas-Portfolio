@@ -1,6 +1,7 @@
 import {
   frontend,
   backend,
+  graphics,
   ux,
   prototyping,
   javascript,
@@ -60,6 +61,10 @@ const services = [
   {
     title: 'Full stack developer',
     icon: prototyping,
+  },
+  {
+    title: 'Graphics Design',
+    icon: graphics,
   },
 ];
 
