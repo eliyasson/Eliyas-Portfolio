@@ -94,7 +94,7 @@ const Hero = () => {
 
         <div>
           <img
-            className="absolute bottom-0  ml-[50vw] 
+            className="absolute bottom-0 right-0 ml-[50vw] 
             lg:ml-[65vw] md:ml-[60vw] xmd:ml-[60vw] 
             sm:h-[70vh] md:h-[80vh] xl:h-[80vh] object-cover max-h-[90vh]"
             src={eliyas}
