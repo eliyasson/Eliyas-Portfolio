@@ -8,7 +8,9 @@ import linkedinIcon from '../assets/icons/linkedin.svg';
 import instagramIcon from '../assets/icons/instagram.svg';
 
 const Icon = ({ src, alt }) => (
-  <img src={src} alt={alt} className="w-8 h-8 md:w-10 md:h-10 lg:w-12 lg:h-12 mr-4 md:mr-6 lg:mr-8" />
+  <img src={src} alt={alt} className="w-8 h-8 md:w-10 md:h-10 lg:w-12 lg:h-12 mr-4 md:mr-6 lg:mr-8" 
+  style={{ zIndex: 2 }}
+  />
 );
 
 const Hero = () => {
@@ -47,7 +49,7 @@ const Hero = () => {
             <p className={`${styles.heroSubText} mt-2 text-white`}>
               Front End Developer
             </p>
-            <div className="flex mt-4 md:mt-6 lg:mt-8">
+            <div className="flex mt-4 md:mt-6 lg:mt-8" style={{ zIndex: 1 }}>
               <a href="https://github.com/eliyasson" target="_blank" rel="noopener noreferrer">
                 <Icon src={githubIcon} alt="GitHub" />
               </a>
@@ -96,7 +98,7 @@ const Hero = () => {
           <img
             className="absolute bottom-0 right-0 ml-[50vw] 
             lg:ml-[65vw] md:ml-[60vw] xmd:ml-[60vw] 
-            sm:h-[70vh] md:h-[80vh] xl:h-[80vh] object-cover max-h-[90vh]"
+            sm:h-[70vh] md:h-[80vh] xl:h-[80vh] object-cover max-h-[50vh]"
             src={eliyas}
             alt="eliyas"
           />
