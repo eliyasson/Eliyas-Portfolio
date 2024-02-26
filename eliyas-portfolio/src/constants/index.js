@@ -70,55 +70,57 @@ const technologies = [
   {
     name: 'HTML 5',
     icon: html,
+    title: 'HTML',
   },
   {
     name: 'CSS 3',
     icon: css,
+    title: 'CSS',
   },
   {
     name: 'JavaScript',
     icon: javascript,
+    title: 'Javascript',
   },
   {
     name: 'TypeScript',
     icon: typescript,
+    title: 'TypeScript',
   },
   {
     name: 'React JS',
     icon: reactjs,
-  },
-  {
-    name: 'Redux Toolkit',
-    icon: redux,
+    title: 'React JS',
   },
   {
     name: 'Tailwind CSS',
     icon: tailwind,
+    title: 'Tailwind',
   },
   {
     name: 'Node JS',
     icon: nodejs,
-  },
- 
-  {
-    name: 'graphql',
-    icon: graphql,
+    title: 'Node JS',
   },
   {
     name: 'postgresql',
     icon: postgresql,
+    title: 'postgresql',
   },
   {
     name: 'git',
     icon: git,
+    title: 'git',
   },
   {
     name: 'figma',
     icon: figma,
+    title: 'figma',
   },
   {
     name: 'php',
     icon: docker,
+    title: 'PHP',
   },
 ];
 
